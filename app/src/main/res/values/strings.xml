@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">Inventory</string>
+    <!-- Label for overflow menu option that inserts fake pet data into the app [CHAR LIMIT=20] -->
+    <string name="sale_Btn">Sale</string>
+    <string name="title_activity_navigation">navigation</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- Title text for the empty view, which describes the empty list image -->
+    <string name="empty_view_title_text">Out Of Stock&#8230;</string>
+    <!-- Subtitle text for the empty view that prompts the user add a product -->
+    <string name="empty_view_subtitle_text">Get started by adding a product</string>
+
+    <!-- Hint label for product name -->
+    <string name="hint_product_name">e.g. Android Studio Book</string>
+    <!-- Hint label for product supplier email -->
+    <string name="hint_supplier_email">e.g. hello@supplier.com</string>
+    <string name="hint_supplier_name">e.g. amazon</string>
+    <string name="hint_supplier_phone">e.g. 9665xxxxx</string>
+    <!-- Hint label for product price -->
+    <string name="hint_value_price">e.g. 0.00</string>
+    <!-- Hint label for product quantity -->
+    <string name="hint_value_quantity">1</string>
+
+    <!-- Label for product name -->
+    <string name="product_lable_name">Name:</string>
+    <!-- Label for supplier email -->
+    <string name="supplier_lable_email">Supplier Email:</string>
+    <string name="supplier_lable_name">Supplier Name:</string>
+    <string name="supplier_lable_phone">Supplier Phone:</string>
+    <!-- Label for product purchase price -->
+    <string name="product_purchase_price">Price:</string>
+    <!-- Label for product currency -->
+    <string name="product_currency">SR</string>
+    <!-- Label for product quantity -->
+    <string name="product_quantity">Quantity:</string>
+
+    <!-- Label button for "Save" -->
+    <string name="btn_save">Save</string>
+
+    <string name="editor_activity_title_new_product">Add Product</string>
+
+    <!-- Toast message in editor when current pet was successfully updated [CHAR LIMIT=NONE] -->
+    <string name="update_Product_successful">Product updated</string>
+
+    <!-- Toast message in editor when current pet has failed to be updated [CHAR LIMIT=NONE] -->
+    <string name="update_Product_failed">Error with updating product</string>
+
+    <!-- Toast message in editor when new pet has been successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="insert_Product_successful">Product saved</string>
+
+    <!-- Toast message in editor when new pet has failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="insert_Product_failed">Error with saving product</string>
+
+    <!-- Toast message in editor when current pet was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="delete_product_successful">Product deleted</string>
+
+    <!-- Toast message in editor when current pet has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="delete_product_failed">Error with deleting product</string>
+
+    <string name="add_Data">Add Data</string>
+    <string name="delete_all_data">Delete All Data</string>
+    <string name="order_from_sub">Order from Supplier</string>
+    <string name="update_detail_product_failed">Error with saving quantity</string>
+    <string name="update_product_failed">Error with updating product</string>
+    <string name="update_product_successful">Product updated</string>
+    <string name="editor_insert_product_failed">Error with savng the product</string>
+    <string name="editor_insert_product_successful">Product saved ! </string>
+    <string name="edit_item">Edit Product</string>
+    <string name="product_detail">Product Information</string>
+    <string name="delete_dialog_msg">Delete this product?</string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+
+</resources>

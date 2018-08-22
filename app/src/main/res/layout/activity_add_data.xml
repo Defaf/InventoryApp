@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.dhaffaf.inventory.AddData"
+    android:orientation="vertical">
+    <LinearLayout
+        style="@style/LinearStyle"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/AddProductTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/product_lable_name" />
+
+        <EditText
+            android:id="@+id/add_product_name_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/hint_product_name"
+            android:inputType="textCapWords" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/LinearStyle"
+        android:weightSum="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/AddProductTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:text="@string/product_purchase_price" />
+
+        <EditText
+            android:id="@+id/add_product_price_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/hint_value_price"
+            android:inputType="numberDecimal"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            style="@style/AddProductCurrencyStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearStyle"
+        android:weightSum="2"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content">
+
+        <TextView
+            style="@style/AddProductTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/product_quantity" />
+
+        <EditText
+            android:id="@+id/add_product_quantity_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/hint_value_quantity"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearStyle"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/AddProductTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/supplier_lable_name" />
+
+        <EditText
+            android:id="@+id/add_product_sub_name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/hint_supplier_name"
+            android:inputType="textEmailAddress"
+            android:maxLength="25" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearStyle"
+        android:weightSum="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            style="@style/AddProductTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/supplier_lable_email" />
+
+        <EditText
+            android:id="@+id/add_product_sub_mail"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/hint_supplier_email"
+            android:inputType="textEmailAddress"
+            android:maxLength="25" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearStyle"
+        android:weightSum="2"
+        android:layout_height="match_parent"
+        android:layout_width="wrap_content">
+
+        <TextView
+            style="@style/AddProductTextViewStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/supplier_lable_phone" />
+
+        <EditText
+            android:id="@+id/add_product_sub_phone"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/hint_supplier_phone"
+            android:inputType="textEmailAddress"
+            android:maxLength="25" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save_product"
+        style="@style/AddProductButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

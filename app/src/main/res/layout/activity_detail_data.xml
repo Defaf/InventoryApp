@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context="com.dhaffaf.inventory.DetailData">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:text="Product Information"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#2B3D4D" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingTop="10dp"
+                android:text="Product Name:"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#AEB6BD" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="33dp"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#AEB6BD" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingTop="10dp"
+                android:text="Price:"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#AEB6BD" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingLeft="33dp"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#AEB6BD" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:paddingTop="10dp"
+                android:text="Quantity:"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#AEB6BD" />
+
+            <Button
+                android:id="@+id/quantity_plus"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:onClick="increaseQuantity"
+                android:text="+" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:fontFamily="sans-serif"
+                android:paddingTop="10dp"
+                android:textAppearance="?android:textAppearanceSmall"
+                android:textColor="#AEB6BD" />
+
+            <Button
+                android:id="@+id/quantity_minus"
+                android:layout_width="35dp"
+                android:layout_height="wrap_content"
+                android:onClick="decreaseQuantity"
+                android:text="-" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="16dp"
+        android:text="Supplier Information"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="#2B3D4D" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingTop="10dp"
+            android:text="SupplierName:"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD" />
+
+        <TextView
+            android:id="@+id/sub_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingTop="10dp"
+            android:text="SupplierEmail:"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD" />
+
+        <TextView
+            android:id="@+id/sub_mail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingTop="10dp"
+            android:text="SupplierPhone:"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD" />
+
+        <TextView
+            android:id="@+id/sub_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:paddingLeft="16dp"
+            android:paddingTop="10dp"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="#AEB6BD" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/order_from_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="OrderSupplier" />
+
+
+        <Button
+            android:id="@+id/save_update_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginTop="16dp"
+            android:text="Save Quantity" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/Delete_Product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="45dp"
+            android:layout_marginTop="16dp"
+            android:text="Delete" />
+
+        <Button
+            android:id="@+id/edit_product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="16dp"
+            android:text="Edit Product" />
+
+    </LinearLayout>
+</LinearLayout>

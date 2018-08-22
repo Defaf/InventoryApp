@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dhaffaf.inventory.MainActivity">
+
+    <ListView
+        android:id="@+id/List_view_product"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="16dp" />
+
+    <!-- Empty view for the list -->
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/empty_inventory_image"
+            style="@style/EmptyViewImageStyle"/>
+
+        <TextView
+            android:id="@+id/empty_title_text_view"
+            style="@style/EmptyTitleStyle"
+            android:layout_below="@id/empty_inventory_image"/>
+
+        <TextView
+            android:id="@+id/empty_subtitle_text_view"
+            style="@style/EmptySubtitleStyle"
+            android:layout_below="@id/empty_title_text_view"/>
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/ListViewFabStyle"/>
+</RelativeLayout>

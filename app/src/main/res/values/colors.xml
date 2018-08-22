@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="colorAccent">#795548</color>
+
+    <!-- Primary color for the editor -->
+    <color name="editorColorPrimary">#2D3640</color>
+    <!-- Primary dark color for the editor -->
+    <color name="editorColorPrimaryDark">#394450</color>
+
+    <color name="colorPrimaryLight">#FFECB3</color>
+    <color name="colorPrimaryText">#212121</color>
+    <color name="colorSecondaryText">#757575</color>
+    <color name="colorIcons">#212121</color>
+    <color name="colorBackground">#f5f5f5</color>
+</resources>
